@@ -296,5 +296,6 @@ export interface AfterAuthOptions<
   R extends ShopifyRestResources = ShopifyRestResources,
 > {
   session: Session;
+  request: Request;
   admin: AdminApiContext<R>;
 }

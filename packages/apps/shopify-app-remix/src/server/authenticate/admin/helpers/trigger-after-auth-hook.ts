@@ -18,6 +18,7 @@ export async function triggerAfterAuthHook<
     logger.info('Running afterAuth hook');
     await config.hooks.afterAuth({
       session,
+      request,
       admin: createAdminApiContext<Resources>(
         session,
         params,
